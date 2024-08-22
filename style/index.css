@@ -23,8 +23,10 @@ figure {
     font-family: var(--fontsfam);
 }
 .card {
-    width: 327px;
-    height: 500px;
+    min-width: 327px;
+    max-width: 350px;
+    min-height: 500px;
+    max-height: 525px;
     font-weight: 500;
     border-radius: 20px;
     border: black ridge 1px ;
@@ -62,7 +64,10 @@ figure {
         font-size: 12px;
     }
     h2{
-        font-weight: 800;
+        font-weight: 800;     
+    }
+    h2:hover{
+        color: var(--background);
     }
     .text {
         color: var(--color-text);
@@ -83,6 +88,9 @@ figure {
     p{
         font-weight: 800;
     }
+}
+.user:hover{
+    color: var(--background);
 }
 .attribution { 
     width: 100%;
